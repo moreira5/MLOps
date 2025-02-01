@@ -6,26 +6,26 @@ The initial model (`model_v1`) was trained using a single predictor (`x3`) to pe
 
 ### 1. Clone the Repository
 If you haven’t already, clone the repository:
-\`\`\`sh
+```
 git clone https://github.com/your-username/mlops.git
 cd mlops
-\`\`\`
+```
 
 ### 2. Install Dependencies
 Ensure you have Python installed, then run:
-\`\`\`sh
+```sh
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 3. Run the Model for Predictions
 To use the trained model for generating predictions, run:
-\`\`\`sh
+```sh
 python scripts/run_model.py
-\`\`\`
+```
 This will save the predictions in `data/predictions.csv`.
 
 ## File Structure
-\`\`\`
+```
 mlops/
 │── data/        # Dataset files
 │── models/      # Saved trained models
@@ -33,4 +33,4 @@ mlops/
 │── README.md    # Documentation
 │── requirements.txt # Dependencies
 │── .gitignore   # Ignored files
-\`\`\`
+```

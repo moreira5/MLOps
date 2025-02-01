@@ -6,8 +6,8 @@ from sklearn.metrics import r2_score
 # Load data
 df = pd.read_csv('data/04 sampregdata.csv')
 
-# Choose the best X (replace 'feature1' with the actual column name)
-X = df[['x3']]  # Identify the best predictor through analysis
+# Choose the best two X's
+X = df[['x2','x3']]
 y = df['y']
 
 # Split data
@@ -23,4 +23,4 @@ print(f'R^2 Score: {r2_score(y_test, y_pred)}')
 
 # Save the model
 import joblib
-joblib.dump(model, 'models/linear_model_v1.pkl')
+joblib.dump(model, 'models/linear_model_v2.pkl')

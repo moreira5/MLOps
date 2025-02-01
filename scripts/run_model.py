@@ -3,7 +3,7 @@ import joblib
 
 model = joblib.load('models/linear_model_v2.pkl')
 df = pd.read_csv('data/04 sampregdata.csv')
-X_new = df[['x3']]
+X_new = df[['x2', 'x3']]
 
 predictions = model.predict(X_new)
 df['predictions'] = predictions
